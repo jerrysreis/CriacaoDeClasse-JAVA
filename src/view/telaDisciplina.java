@@ -77,6 +77,12 @@ public class telaDisciplina extends javax.swing.JFrame {
 
         lbProfessor.setText("Nome do professor:");
 
+        txProfessor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txProfessorActionPerformed(evt);
+            }
+        });
+
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton1.setText("Criar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +99,7 @@ public class telaDisciplina extends javax.swing.JFrame {
 
         lbIndex.setText("Index");
 
-        btIndex.setText("o");
+        btIndex.setText("Ok!");
         btIndex.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btIndexActionPerformed(evt);
@@ -115,16 +121,20 @@ public class telaDisciplina extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jButton1)
                         .addGap(98, 98, 98)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txIndex)
-                            .addComponent(btIndex, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(txIndex, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
+                                .addGap(333, 333, 333))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btIndex, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txDisciplina, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbDisciplina))
                         .addGap(204, 204, 204)
-                        .addComponent(lbIndex)))
-                .addContainerGap(244, Short.MAX_VALUE))
+                        .addComponent(lbIndex)
+                        .addGap(269, 269, 269))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -153,7 +163,7 @@ public class telaDisciplina extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txIndex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btIndex)))
+                                .addComponent(btIndex, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -241,53 +251,46 @@ public class telaDisciplina extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(10, 10, 10)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lbSub)
+                                    .addComponent(lbNp2)
+                                    .addComponent(lbExame)
+                                    .addComponent(lbNp1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txSub, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lbSub)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(txSub, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lbNp2)
-                                        .addGap(18, 18, 18)
+                                        .addGap(1, 1, 1)
                                         .addComponent(txNp2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txExame, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txNp1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btExame, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btSub, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btNp2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(btNp1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lbParaExame)
+                                    .addComponent(lbMedia))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lbExame)
+                                        .addComponent(txMedia)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txExame, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(btMedia))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lbNp1)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(txNp1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btExame)
-                                    .addComponent(btSub)
-                                    .addComponent(btNp2)
-                                    .addComponent(btNp1))
-                                .addGap(0, 0, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(55, 55, 55)
-                                .addComponent(lbMedia)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btMedia))
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(lbParaExame)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txParaExame, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btParaExame)))
+                                        .addComponent(txParaExame, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btParaExame)))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -299,33 +302,39 @@ public class telaDisciplina extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbNp1)
                     .addComponent(txNp1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btNp1))
+                    .addComponent(btNp1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbNp2)
-                    .addComponent(txNp2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btNp2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbNp2)
+                            .addComponent(txNp2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(9, 9, 9))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btNp2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbSub)
                     .addComponent(txSub, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btSub))
+                    .addComponent(btSub, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbExame)
-                    .addComponent(txExame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btExame))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbParaExame)
-                    .addComponent(txParaExame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btParaExame))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbExame)
+                        .addComponent(txExame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btExame, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btParaExame, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbParaExame)
+                        .addComponent(txParaExame, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbMedia)
                     .addComponent(txMedia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btMedia))
-                .addGap(14, 14, 14))
+                    .addComponent(btMedia, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         pack();
@@ -349,51 +358,81 @@ public class telaDisciplina extends javax.swing.JFrame {
 
     private void btNp1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btNp1ActionPerformed
      
-      int o = Integer.parseInt(txIndex.getText());
-      Disciplina n1 = arr.get(o);
+      int index = Integer.parseInt(txIndex.getText());
+      Disciplina n1 = arr.get(index);
       if((txNp1.getText()==null) || (txNp1.getText().trim().equals(""))){
-          double ff = -1;
-          n1.setNp1(ff);
+        n1.zeraNp1();
       } else{
         double np1 = Double.parseDouble(txNp1.getText());
         n1.setNp1(np1);
       }
+      check();
        
     }//GEN-LAST:event_btNp1ActionPerformed
 
     private void btNp2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btNp2ActionPerformed
-       double np2 = Double.parseDouble(txNp2.getText());
-       int o = Integer.parseInt(txIndex.getText());
-       Disciplina n2 = arr.get(o);
-       n2.setNp2(np2);
+       int index = Integer.parseInt(txIndex.getText());
+       Disciplina n2 = arr.get(index);
+       if((txNp2.getText()==null) || (txNp2.getText().trim().equals(""))){
+           n2.zeraNp2();
+       }else{
+           double np2 = Double.parseDouble(txNp2.getText());
+           n2.setNp2(np2);
+       }
+       check();
     }//GEN-LAST:event_btNp2ActionPerformed
 
     private void btSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSubActionPerformed
-       double sub1 = Double.parseDouble(txSub.getText());
-       int o = Integer.parseInt(txIndex.getText());
-       Disciplina sub = arr.get(o);
-       sub.setSub(sub1);
+       int index = Integer.parseInt(txIndex.getText());
+       Disciplina sub = arr.get(index);
+       if((txSub.getText()==null) || (txSub.getText().trim().equals(""))){
+           sub.zeraSub();
+       } else{
+           double sub1 = Double.parseDouble(txSub.getText());
+           sub.setSub(sub1);
+       }
+       check();
     }//GEN-LAST:event_btSubActionPerformed
 
     private void btExameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExameActionPerformed
        double exam = Double.parseDouble(txExame.getText());
        int o = Integer.parseInt(txIndex.getText());
        Disciplina exame = arr.get(o);
-       exame.setNp1(exam);
+       exame.setExame(exam);
     }//GEN-LAST:event_btExameActionPerformed
 
+    private void check(){
+        int o = Integer.parseInt(txIndex.getText());
+        if((arr.get(o).getSub() == -1) && (arr.get(o).getNp1()>=0) && (arr.get(o).getNp2()>=0)){
+            btSub.setEnabled(false);
+        } else if((arr.get(o).getSub()>=0) && (arr.get(o).getNp1()==-1) && (arr.get(o).getNp2()>=0)){
+            btNp1.setEnabled(false);
+        } else if((arr.get(o).getSub()>=0) && (arr.get(o).getNp1()>=0) && (arr.get(o).getNp2()==-1)){
+            btNp2.setEnabled(false);
+        } else{
+            btNp2.setEnabled(true);
+            btNp1.setEnabled(true);
+            btSub.setEnabled(true);
+        }
+    }
+    private void blanc(){
+        txNp1.setText(null);
+        txNp2.setText(null);
+        txSub.setText(null);
+    }
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          
-         String prof = txProfessor.getText();
-         String discip = txDisciplina.getText(); 
-         
-         if((prof.length()>2) && (discip.length()>2)){
-         arr.add(new Disciplina(prof, discip) );
-         int ff = arr.size() - 1;
-         txIndex.setText(Integer.toString(ff));
-         } else{
-             JOptionPane.showMessageDialog(null,"Informe um nome de professor e disciplina válidos");
-         }
+        String prof = txProfessor.getText();
+        String discip = txDisciplina.getText(); 
+        if((prof.length()>2) && (discip.length()>2)){
+            arr.add(new Disciplina(prof, discip) );
+            int index = arr.size() - 1;
+            txIndex.setText(Integer.toString(index));
+        } else{
+            JOptionPane.showMessageDialog(null,"Informe um nome de professor e disciplina válidos");
+        }
+        blanc();
          
          
          
@@ -408,8 +447,18 @@ public class telaDisciplina extends javax.swing.JFrame {
     private void btIndexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btIndexActionPerformed
         int o = Integer.parseInt(txIndex.getText());
         Disciplina rr = arr.get(o);
-        txNp1.setText(Double.toString(rr.getNp1()));
-        txNp2.setText(Double.toString(rr.getNp2()));
+        txProfessor.setText(rr.getProfessor());
+        txDisciplina.setText(rr.getDisciplina());
+        blanc();
+        if(rr.getNp1()!=-1){
+            txNp1.setText(Double.toString(rr.getNp1()));
+        } 
+        if(rr.getNp2()!=-1){
+            txNp2.setText(Double.toString(rr.getNp2()));
+        }
+        if(rr.getSub()!=-1){
+            txSub.setText(Double.toString(rr.getSub()));
+        }
         
         System.out.println(arr.get(o));
     }//GEN-LAST:event_btIndexActionPerformed
@@ -429,6 +478,10 @@ public class telaDisciplina extends javax.swing.JFrame {
        Disciplina pex = arr.get(o);
        txMedia.setText(Double.toString(pex.media()));
     }//GEN-LAST:event_btMediaActionPerformed
+
+    private void txProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txProfessorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txProfessorActionPerformed
 
 
     /**

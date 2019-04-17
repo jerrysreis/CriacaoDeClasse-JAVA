@@ -84,6 +84,18 @@ public class Disciplina {
         }
     }
     
+    public void zeraNp1() {
+        this.np1 = -1;
+    }
+    
+    public void zeraNp2(){
+        this.np2 = -1;
+    }
+    
+    public void zeraSub(){
+        this.sub = -1;
+    }
+    
 public Disciplina(String professor, String disciplina){
         this.disciplina = disciplina;
         this.professor = professor;

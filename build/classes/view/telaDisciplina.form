@@ -24,63 +24,55 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel1" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jPanel1" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lbSub" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbNp2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbExame" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbNp1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txSub" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lbSub" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="txSub" min="-2" pref="59" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lbNp2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                                       <Component id="txNp2" min="-2" pref="58" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lbExame" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txExame" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="txNp1" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="btExame" max="32767" attributes="0"/>
+                                  <Component id="btSub" max="32767" attributes="0"/>
+                                  <Component id="btNp2" max="32767" attributes="0"/>
+                                  <Component id="btNp1" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="lbParaExame" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbMedia" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="txMedia" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txExame" min="-2" pref="59" max="-2" attributes="0"/>
+                                      <Component id="btMedia" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lbNp1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="txNp1" min="-2" pref="58" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="txParaExame" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="btParaExame" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btExame" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btSub" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btNp2" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btNp1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                              <Component id="lbMedia" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="txMedia" min="-2" pref="69" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="btMedia" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="lbParaExame" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="txParaExame" min="-2" pref="62" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btParaExame" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -98,39 +90,50 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lbNp1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txNp1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btNp1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btNp1" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbNp2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txNp2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btNp2" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbNp2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txNp2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="btNp2" min="-2" pref="19" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lbSub" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txSub" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btSub" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btSub" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbExame" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txExame" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btExame" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbExame" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txExame" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="btExame" pref="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbParaExame" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txParaExame" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btParaExame" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btParaExame" min="-2" pref="20" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="lbParaExame" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txParaExame" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="35" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lbMedia" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txMedia" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btMedia" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btMedia" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              <EmptySpace pref="44" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -160,9 +163,15 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txIndex" max="32767" attributes="0"/>
-                              <Component id="btIndex" pref="46" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="txIndex" pref="58" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="333" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="btIndex" min="-2" pref="58" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -172,9 +181,9 @@
                           </Group>
                           <EmptySpace min="-2" pref="204" max="-2" attributes="0"/>
                           <Component id="lbIndex" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="244" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -209,7 +218,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="txIndex" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btIndex" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btIndex" min="-2" pref="20" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -245,6 +254,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txProfessor">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txProfessorActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
@@ -269,7 +281,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btIndex">
           <Properties>
-            <Property name="text" type="java.lang.String" value="o"/>
+            <Property name="text" type="java.lang.String" value="Ok!"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btIndexActionPerformed"/>
